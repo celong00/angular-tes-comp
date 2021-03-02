@@ -9,8 +9,8 @@ import { Router } from "@angular/router";
 export class AppComponent {
   constructor(private router: Router) {}
   name = "Angular " + VERSION.major;
-
+  textnama = "";
   openhalologin() {
-    this.router.navigate(["/login"]);
+    this.router.navigate(["/home" + this.textnama]);
   }
 }
